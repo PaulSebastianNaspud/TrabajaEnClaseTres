@@ -24,11 +24,9 @@ public  class TrabajoEnClaseTres {
             if (j == '(' || j == '[' || j == '{') {
                 pilaChar.push(j);
                 imprimir(pilaChar);
-            } else if (j == ')' || j == ']' || j == '}') {
-                if ((j == ']' && pilaChar.get(pilaChar.size() - 1) == '[') || (j == '}' && pilaChar.get(pilaChar.size() - 1) == '{') || (j == ')' && pilaChar.get(pilaChar.size()-1) == '(')) {
+            }else if ((j == ']' && pilaChar.get(pilaChar.size() - 1) == '[') || (j == '}' && pilaChar.get(pilaChar.size() - 1) == '{') || (j == ')' && pilaChar.get(pilaChar.size()-1) == '(')) {
                     pilaChar.pop();
                     imprimir(pilaChar);
-                }
             }
         }
         
